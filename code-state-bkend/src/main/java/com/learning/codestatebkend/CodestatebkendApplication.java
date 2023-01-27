@@ -49,7 +49,7 @@ public class CodestatebkendApplication {
         	       
                 InputStream dbAsStream = resource.getInputStream();
                 
-        		System.out.println("el archivo: "+serverUrl1);
+        		System.out.println("Server URL: "+serverUrl1);
         		
         		  StringBuilder textBuilder = new StringBuilder();
         		    try (Reader reader = new BufferedReader(new InputStreamReader
@@ -72,7 +72,7 @@ public class CodestatebkendApplication {
      	       
                 InputStream dbAsStream = resource.getInputStream();
                 
-        		System.out.println("el archivo: "+serverUrl2);
+        		System.out.println("Server URL: "+serverUrl2);
         		
         		  StringBuilder textBuilder = new StringBuilder();
         		    try (Reader reader = new BufferedReader(new InputStreamReader
@@ -110,6 +110,4 @@ public class CodestatebkendApplication {
 	public static String requestStateData() {
 		return requestProcessedData(2);
 	}
-
-
 }
