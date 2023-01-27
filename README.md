@@ -198,7 +198,7 @@ The easiest way to get your project into Google shell is through a Git repositor
 Go to the cloned projects root directory and type, `./mvnw clean package` to make the jar file. Now all ready. First, set PROJECT-ID variable using:
 
 ```
-export PROJECT_ID=”$(gcloud config get-value project -q)”
+export PROJECT_ID=$(gcloud config get-value project -q)
 ```
 
 Now, Let's build the Docker image with bellow code in the terminal. (don’t forget the dot at the end)
